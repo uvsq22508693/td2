@@ -27,20 +27,24 @@ Il pourra éventuellement être nécessaire de [configurer le proxy](http://mave
 À chaque étape, validez vos modifications avec `git` et si nécessaire, exécutez le cycle maven adapté pour vérifier vos manipulations.
 
 1.  Quelles conventions utilise Maven pour l’arborescence des répertoires ?
-    > test de reponse
+    > Maven utilise une structure standard pour les projets Java
 1.  Examinez le projet Maven ainsi que le fichier de description et répondez aux questions suivantes :
     1.  Dans quel répertoire se trouvent les fichiers sources du projet ? Les sources des tests ?
-        > RÉPONDRE ICI
+        > Sources du projet : src/main/java/fr/uvsq/cprog/mvnjunit
+        > Sources de tests : src/test/java/fr/uvsq/cprog/mvnjunit
     1. Quelles sont les coordonnées du projet ?
-        > RÉPONDRE ICI
+        > groupId : fr.uvsq.cprog
+        > artifactId : mvnjunit
+        > version : 1.0-SNAPSHOT
     1. À quoi sert la propriété `project.build.sourceEncoding` ?
-        > RÉPONDRE ICI
+        > Permet d’éviter des problèmes avec les caractères spéciaux (accents, symboles…)
     1. Quelles versions des sources et de la JVM sont utilisés ?
-        > RÉPONDRE ICI
+        > Version 17
     1. Quelle version de JUnit est configurée ? À quoi sert la balise `scope` ?
-        > RÉPONDRE ICI
+        > Version 4.11
+        > Scope indique quand la dépendance est utilisée
     1. À quoi sert la section `pluginManagement` ?
-        > RÉPONDRE ICI
+        > Déclare les plugins Maven
 1.  Modifiez la configuration du projet de la façon suivante :
     1.  fixez la version des sources et des .class pour utiliser la version 17 de Java
     1.  utilisez la dernière version stable de JUnit 4 (cf. [MVNRepository](https://mvnrepository.com/))
