@@ -36,6 +36,13 @@ public class ChaineCrypteeTest {
     }
 
     @Test
+    public void testChaineNull() {
+        ChaineCryptee c = ChaineCryptee.deEnClair(null, 3);
+        assertEquals(null, c.crypte());
+        assertEquals(null, c.decrypte());
+    }
+
+    @Test
     public void testDecalageSuperieur26() {
         ChaineCryptee c = ChaineCryptee.deEnClair("BONJOUR", 29); // 29 % 26 = 3
         assertEquals("ERQMRXU", c.crypte());
