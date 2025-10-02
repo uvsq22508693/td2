@@ -59,7 +59,14 @@ Il pourra éventuellement être nécessaire de [configurer le proxy](http://mave
 1.  Ajoutez une classe `ChaineCryptee` et une classe `ChaineCrypteeTest` dans les répertoires et packages appropriés.
     Supprimez les classes d'exemple `App` et `AppTest`.
 1.  Énumérez une liste de cas de tests à réaliser en n'oubliant pas les cas d'erreur.
-    > RÉPONDRE ICI
+    > Chiffrement simple
+    > Déchiffrement simple
+    > Chiffrement avec décalage négatif
+    > Déchiffrement avec décalage négatif
+    > Majuscules et espaces
+    > Caractères non alphabétiques
+    > Chaîne vide
+    > Décalage > 26
 1.  Pour chaque cas de test,
     1. écrivez le test JUnit correspondant dans la classe de test,
     1. vérifiez qu’il échoue,
