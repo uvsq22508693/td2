@@ -39,7 +39,7 @@ Il pourra éventuellement être nécessaire de [configurer le proxy](http://mave
     1. À quoi sert la propriété `project.build.sourceEncoding` ?
         > Permet d’éviter des problèmes avec les caractères spéciaux (accents, symboles…)
     1. Quelles versions des sources et de la JVM sont utilisés ?
-        > Version 17
+        > Version 1.7
     1. Quelle version de JUnit est configurée ? À quoi sert la balise `scope` ?
         > Version 4.11
         > Scope indique quand la dépendance est utilisée
