@@ -1,8 +1,13 @@
 package fr.uvsq.cprog.mvnjunit;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class ChaineCryptee {
     private String chaineCryptee;
     private int decalage;
+
+    private static final Logger Logger = LoggerFactory.getLogger(ChaineCryptee.class);
 
     private ChaineCryptee(String chaineCryptee, int decalage) {
         this.chaineCryptee = chaineCryptee;
@@ -44,6 +49,9 @@ public class ChaineCryptee {
     }
 
     public String crypte() {
+        if (chaineCryptee == null) {
+            return null;
+        }
         return chaineCryptee;
     }
 
@@ -54,5 +62,8 @@ public class ChaineCryptee {
         System.out.println("Décrypté: " + chaine1.decrypte());
 
         System.out.println();
+        // logger.info("Texte clair: BONJOUR");
+        // logger.info("Crypté: {}", chaine1.crypte());
+        // logger.info("Décrypté: {}", chaine1.decrypte());
     }
 }
